@@ -28,7 +28,7 @@
   /*========== Font and typography ==========*/
   /*.5rem = 8px | 1rem = 16px ...*/
   --body-font: 'Poppins', sans-serif;
-  --biggest-font-size: 3rem;
+  --biggest-font-size: 4rem;
   --h1-font-size: 1.5rem;
   --h2-font-size: 1.25rem;
   --h3-font-size: 1rem;
@@ -282,7 +282,7 @@ img {
 .nav {
     height: 50px;
     width: 100%;
-    background-color: #785eee9c;
+    background-color: var(--first-color);
     position: relative;
     padding: 10px;
     margin: 0 2%;
@@ -299,11 +299,12 @@ img {
     display: inline-block;
     font-size: 22px;
     color: var(--text-color);
-    padding: 10px 10px 10px 10px;
+    padding: 10px 10px 10px 10px;  
   }
   
   .nav > .nav-btn {
     display: none;
+    
   }
   
   .nav > .nav-links {
@@ -325,6 +326,7 @@ img {
   
   .nav > #nav-check {
     display: none;
+  
   }
   
   @media (max-width:600px) {
@@ -353,7 +355,7 @@ img {
       position: absolute;
       display: block;
       width: 100%;
-      background-color: #333;
+      background-color: var(--first-color);
       height: 0px;
       transition: all 0.3s ease-in;
       overflow-y: hidden;
@@ -402,10 +404,13 @@ img {
 
 .home__name{
     font-size: var(--biggest-font-size);
+    font-family: italic;
 }
 
 .home__img{
-    width: 160px;
+    width: 100%;
+    border-radius: 50%;
+    
 }
 
 .home__handle{

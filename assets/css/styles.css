@@ -916,6 +916,11 @@ height: 4rem;
     display: inline-flex;
 }
 
+.footer__social-link:hover{
+    background-color: var(--first-color);
+    color: #fff;
+}
+
 .footer__copy{
     display: block;
     margin-top: 4.5rem;

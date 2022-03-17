@@ -284,8 +284,13 @@ img {
     width: 100%;
     background-color: #785eee9c;
     position: relative;
+    padding: 10px;
+    margin: 0 2%;
   }
   
+  .nav__text {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
   .nav > .nav-header {
     display: inline;
   }

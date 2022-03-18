@@ -25,6 +25,12 @@
     <!--=============== CSS ===============-->
     <link rel="stylesheet" href="assets/css/styles.css" />
 
+    <!-- jquery -->
+    <script
+      src="https://code.jquery.com/jquery-2.1.1.min.js"
+      type="text/javascript"
+    ></script>
+
     <title>Swagatika</title>
   </head>
   <body>
@@ -698,6 +704,8 @@
                     type="text"
                     placeholder="Enter Name"
                     class="contact__form-input"
+                    name="userName"
+                    id="userName"
                   />
                 </div>
 
@@ -707,14 +715,16 @@
                     type="email"
                     placeholder="Enter Email"
                     class="contact__form-input"
+                    name="userEmail"
+                    id="userEmail"
                   />
                 </div>
 
                 <div class="contact__form-div">
                   <label for="" class="contact__form-tag">Message</label>
                   <textarea
-                    name=""
-                    id=""
+                    name="content"
+                    id="content"
                     placeholder="Write a message"
                     cols="30"
                     rows="10"
@@ -724,6 +734,18 @@
                 <button class="button send__button">
                   <i class="bx bx-send"></i>
                 </button>
+
+                <div id="statusMessage">
+                  <?php
+                  if (! empty($message)) {
+                      ?>
+                  <p class="<?php echo $type; ?>Message">
+                    <?php echo $message; ?>
+                  </p>
+                  <?php
+                  }
+                  ?>
+                </div>
               </form>
             </div>
           </div>

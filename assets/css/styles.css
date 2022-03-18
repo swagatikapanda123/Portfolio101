@@ -972,7 +972,7 @@ height: 4rem;
     }
 
     .home__name{
-        font-size: var(--medium-font-size);
+        font-size: var(--biggest-font-size);
     }
 
     .home__img{

@@ -885,6 +885,10 @@ height: 4rem;
     height: 11rem;
 }
 
+/* .send__button{
+    margin-left: 20%;
+} */
+
 
 /*=============== FOOTER ===============*/
 .footer{
@@ -892,7 +896,7 @@ height: 4rem;
 }
 
 .footer__container{
-    padding: 2rem 0 6rem;
+    padding: 2rem 0 1rem;
 }
 
 .footer__title, .footer__link{
@@ -933,10 +937,11 @@ height: 4rem;
 
 .footer__copy{
     display: block;
-    margin-top: 4.5rem;
+    margin-top: 15%;
     color: var(--container-color);
     text-align: center;
     font-size: var(--smaller-font-size);
+   
 }
 
 /*=============== SCROLL BAR ===============*/
